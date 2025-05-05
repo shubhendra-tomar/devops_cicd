@@ -54,7 +54,7 @@ def predict(features: ShipmentFeatures):
 
         # Verify feature shape matches training data
         if input_data.shape[1] != scaler.n_features_in_:
-            raise ValueError(f"Expected {scaler.n_features_in_} features, but got {input_data.shape[1]}.")
+            raise ValueError(f"Shubh Expected {scaler.n_features_in_} features, but got {input_data.shape[1]}.")
 
         # Scale the input data
         scaled_data = scaler.transform(input_data)
